@@ -11,6 +11,7 @@ class CreateCustomerContactsTable extends Migration
      *
      * @return void
      */
+    // Show the sales of 
     public function up()
     {
         Schema::create('customer_spending', function (Blueprint $table) {
@@ -20,7 +21,7 @@ class CreateCustomerContactsTable extends Migration
             $table->unsignedInteger('SO_reference')->nullable();
             $table->string('phone_number');
             $table->string('adress');
-            $table->unsignedInteger('amount_spend');
+            $table->unsignedInteger('sales_amount');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->nullable()->useCurrentOnUpdate();
         });

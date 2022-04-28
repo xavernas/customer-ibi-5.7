@@ -11,6 +11,8 @@ class CreateCustomerCorrelationsTable extends Migration
      *
      * @return void
      */
+    // Used for defining which customer data is used in one region
+    
     public function up()
     {
         Schema::create('customer_correlations', function (Blueprint $table) {
